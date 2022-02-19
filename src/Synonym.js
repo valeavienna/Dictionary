@@ -1,17 +1,21 @@
 import React from "react";
+import "./Synonyms.css";
 
 function Synonym(props) {
   if (props.synonyms) {
     return (
       <div className="Synonym">
         <p>
-          <strong>Synonyms:</strong>
-        </p>
-        <ul>
+          <em>Synonyms: </em>
           {props.synonyms.map(function (synonym, index) {
-            return <li key={index}>{synonym}</li>;
-          })}
-        </ul>
+            return (
+              <span className="font-weight-light" key={index}>
+                {" "}
+                {synonym}{" "}
+              </span>
+            );
+          })}{" "}
+        </p>
       </div>
     );
   } else {

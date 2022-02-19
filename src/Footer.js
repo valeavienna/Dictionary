@@ -9,7 +9,7 @@ function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        <i className="fa-brands fa-github white"></i>Coded by Valeria Corso
+        <i className="fa-brands fa-github white"></i> Coded by Valeria Corso
       </a>
     </div>
   );

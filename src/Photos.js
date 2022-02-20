@@ -3,7 +3,7 @@ import "./Photos.css";
 function Photos(props) {
   if (props.photos) {
     return (
-      <div className="Photos box">
+      <div className="Photos box shadow">
         <div ClassName="row">
           {props.photos.map(function (photo, index) {
             return (

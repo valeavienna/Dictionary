@@ -12,7 +12,7 @@ function Dictionary(props) {
 
   let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
   let pexelsApiKey = "563492ad6f9170000100000108398744febb44bf92dc0103c1269baa";
-  let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=9`;
+  let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=6`;
 
   function search() {
     axios.get(apiURL).then(handleResponse);
@@ -35,7 +35,6 @@ function Dictionary(props) {
 
   function handlePexelsResponse(response) {
     setPhotos(response.data.photos);
-    console.log(photos);
   }
 
   function handleResponse(response) {
